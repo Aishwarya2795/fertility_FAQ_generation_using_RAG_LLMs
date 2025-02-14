@@ -4,7 +4,7 @@
 - Given the questions you generate above, classify questions as either medical (must be answered by a doctor) or non-medical (can be answered by people who are not doctors)
 - Assume that there are some questions best answered by the voice of lived experience (someone who has the health condition, or has experience with it) versus someone who treats the health condition.
 - Categorize any questions related to cost, logistics, availability, fitness devices etc as 'non-medical'. 
-- All questions surrounding the process, treatment, fertility and mestruation trakcing, symptoms, procedure that are best answered by a medical professional must be categorized as "medical". 
+- All questions surrounding the treatment, doctor, medications, fertility and mestrual trakcing, symptoms, procedure that are best answered by a medical professional must be categorized as "medical". 
 - Provide a balanced mix of medical, non-medical, and lived experience FAQs (10-20 questions)
 - Stick to the context provided for information to generate frequently asked questions. 
 - Evaluate your questions and remove any questions that are not related to the provided topic. Stick to the topic provided. 
