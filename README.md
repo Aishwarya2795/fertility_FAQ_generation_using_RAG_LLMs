@@ -42,18 +42,20 @@ The system generates FAQs in **JSON format** as specified in the problem stateme
 }
 ```
 
-## **a) Would you do this also with pure LLM orchestration?
+
+# **Classification System**
+## **a) Would you do this also with pure LLM orchestration?**
 Yes, pure LLM orchestration (i.e., using language models like GPT, Meta LLaMA, or Google Flan-T5) could be used to classify questions based on their medical or non-medical nature. LLMs excel at understanding language in context and can be used in a zero-shot or few-shot setting to classify questions by their medical relevance.
 
-### **Approach:
+### **Approach:**
 Use a pre-trained language model to classify the input question.
 Provide the model with appropriate instructions to determine whether the question is medical or non-medical. For example, you can fine-tune the LLM with labeled data or use prompt engineering to get relevant answers.
 For validating whether the question needs to be answered by a doctor versus a person with lived experience, the model could be trained to recognize nuances in questions related to lived experiences (e.g., chronic conditions) versus those requiring medical expertise.
 
-## **b) What are the data science methods which don't involve using an LLM? Can some supervised learning data be used from what you generated in 1. above?
+## **b) What are the data science methods which don't involve using an LLM? Can some supervised learning data be used from what you generated in 1. above?**
 Yes, traditional machine learning methods can be used for this task, especially when leveraging features such as keywords, sentence structure, and question semantics. These approaches are typically more interpretable and may require less computational power.
 
-### **Approaches:
+### **Approaches:**
 Rule-based Classification:
 
 Build a set of rules that check for specific terms or phrases commonly associated with medical questions (e.g., "treatment," "doctor," "medication," "symptom").
@@ -67,7 +69,7 @@ Use labeled datasets to train a model on features such as:
 - Text embeddings (like Word2Vec, GloVe, or BERT embeddings) to convert questions into numerical representations and use those as inputs to ML models.
 After generating a dataset of medical vs. non-medical questions, you can train a classifier (logistic regression) on it.
 
-## **c) Would you use LLMs to validate your work?
+## **c) Would you use LLMs to validate your work?**
 
 Yes, we would use "LLM as a judge" in addition to other evaluation metrics such Context Recall, Query Recall, Context Precision, Query Precision, Classification metrics (precision, recall, F1 score etc.)
 
